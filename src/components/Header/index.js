@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import MobileMenu from '../../components/MobileMenu'
 
 import './style.css'
 

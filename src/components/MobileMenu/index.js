@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Collapse, CardBody, Card } from 'reactstrap';
-import {Link} from 'react-router-dom'
 import './style.css';
 
 export default class MobileMenu extends Component {

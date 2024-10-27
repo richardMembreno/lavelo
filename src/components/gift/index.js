@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import gift1 from '../../images/gift/2.png'
-import gift2 from '../../images/gift/3.png'
-import gift3 from '../../images/gift/4.png'
-import gift4 from '../../images/gift/2.png'
 import './style.css'
 
 

@@ -73,8 +73,6 @@ class Rsvp extends Component {
 
         const { name,
             email,
-            rsvp,
-            events,
             notes, error } = this.state;
         return (
             <div id="rsvp" className="rsvp-area go-rsvp-area section-padding">
