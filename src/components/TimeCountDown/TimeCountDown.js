@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
-const TimeCountDown = (props) => {
+const TimeCountDown = () => {
   const [countdownDate] = useState(new Date('12/28/2024').getTime());
   const [state, setState] = useState({
     days: 0,
@@ -9,13 +9,7 @@ const TimeCountDown = (props) => {
     seconds: 0,
   });
 
-  // Incluye 'setNewTime' en el array de dependencias
-  useEffect(() => {
-    const interval = setInterval(() => setNewTime(), 1000);
-    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonte
-  }, [setNewTime]);
-
-  const setNewTime = () => {
+  const setNewTime = useCallback(() => {
     if (countdownDate) {
       const currentTime = new Date().getTime();
       const distanceToDate = countdownDate - currentTime;
@@ -37,7 +31,12 @@ const TimeCountDown = (props) => {
 
       setState({ days, hours, minutes, seconds });
     }
-  };
+  }, [countdownDate]);
+
+  useEffect(() => {
+    const interval = setInterval(() => setNewTime(), 1000);
+    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonte
+  }, [setNewTime]);
 
   return (
     <div className="react-countdown">
@@ -61,4 +60,4 @@ const TimeCountDown = (props) => {
   );
 };
 
-export default TimeCountDown;
+export default TimeCountDown
