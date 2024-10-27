@@ -1,5 +1,4 @@
-import React from 'react'
-const { useState, useEffect } = React;
+import React, { useState, useEffect } from 'react';
 
 const TimeCountDown = (props) => {
   const [countdownDate] = useState(new Date('12/28/2024').getTime());
@@ -10,27 +9,23 @@ const TimeCountDown = (props) => {
     seconds: 0,
   });
 
+  // Incluye 'setNewTime' en el array de dependencias
   useEffect(() => {
-    setInterval(() => setNewTime(), 1000);
-  }, []);
+    const interval = setInterval(() => setNewTime(), 1000);
+    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonte
+  }, [setNewTime]);
 
   const setNewTime = () => {
     if (countdownDate) {
       const currentTime = new Date().getTime();
-
       const distanceToDate = countdownDate - currentTime;
 
       let days = Math.floor(distanceToDate / (1000 * 60 * 60 * 24));
-      let hours = Math.floor(
-        (distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-      );
-      let minutes = Math.floor(
-        (distanceToDate % (1000 * 60 * 60)) / (1000 * 60),
-      );
+      let hours = Math.floor((distanceToDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distanceToDate % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distanceToDate % (1000 * 60)) / 1000);
 
       const numbersToAddZeroTo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
       days = `${days}`;
       if (numbersToAddZeroTo.includes(hours)) {
         hours = `0${hours}`;
@@ -40,7 +35,7 @@ const TimeCountDown = (props) => {
         seconds = `0${seconds}`;
       }
 
-      setState({ days: days, hours: hours, minutes, seconds });
+      setState({ days, hours, minutes, seconds });
     }
   };
 
@@ -67,4 +62,3 @@ const TimeCountDown = (props) => {
 };
 
 export default TimeCountDown;
-
