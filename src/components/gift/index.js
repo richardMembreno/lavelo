@@ -75,8 +75,6 @@ render() {
 
     const { name,
         email,
-        rsvp,
-        events,
         notes, error } = this.state;
       return (
           <div className="gift-area">
