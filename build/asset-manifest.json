@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97ded3b0.css",
+    "main.js": "/static/js/main.957793a6.js",
+    "static/js/787.c4d50b53.chunk.js": "/static/js/787.c4d50b53.chunk.js",
+    "static/media/footer.jpg": "/static/media/footer.2d6c36916b2c1c0ae3bd.jpg",
+    "static/media/rings.jpg": "/static/media/rings.0620c4f401f4b6bb4c7e.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/talapo.png": "/static/media/talapo.3b630fe6b31b5595d568.png",
+    "static/media/imagen1.jpeg": "/static/media/imagen1.6149bf152b6d1ac966be.jpeg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/propuesta1.jpeg": "/static/media/propuesta1.d8ef8a7895ac654c5b57.jpeg",
+    "static/media/imagen2.jpeg": "/static/media/imagen2.d3118ff8b5af92bdb29c.jpeg",
+    "static/media/imagen3.jpeg": "/static/media/imagen3.7bfed5cbf14266491df2.jpeg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/propuesta2.jpeg": "/static/media/propuesta2.d75da8722dcb15b05bde.jpeg",
+    "static/media/propuesta3.jpeg": "/static/media/propuesta3.d75da8722dcb15b05bde.jpeg",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/globo.jpeg": "/static/media/globo.530763381f5e795cc799.jpeg",
+    "static/media/1.png": "/static/media/1.1008dfd2526fe00ea750.png",
+    "static/media/Flaticon.svg": "/static/media/Flaticon.cc61ff6704d90d730954.svg",
+    "static/media/1.jpg": "/static/media/1.fedb7c046d19c8cd31a5.jpg",
+    "static/media/2.png": "/static/media/2.332f222c2332f17d585a.png",
+    "static/media/Flaticon.eot": "/static/media/Flaticon.7fd5e1ce34682cc9ac15.eot",
+    "static/media/Flaticon.ttf": "/static/media/Flaticon.d7af927efae1c3d02444.ttf",
+    "static/media/Flaticon.woff": "/static/media/Flaticon.15f1515bdcb731f7ad6f.woff",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.97ded3b0.css.map": "/static/css/main.97ded3b0.css.map",
+    "main.957793a6.js.map": "/static/js/main.957793a6.js.map",
+    "787.c4d50b53.chunk.js.map": "/static/js/787.c4d50b53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97ded3b0.css",
+    "static/js/main.957793a6.js"
+  ]
+}
