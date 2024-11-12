@@ -6,31 +6,18 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import './style.css'
 
 import image1 from '../../images/imagen1.jpeg'
-import image2 from '../../images/imagen2.jpeg'
 import image3 from '../../images/imagen3.jpeg'
 import image4 from '../../images/propuesta1.jpeg'
-import image5 from '../../images/propuesta2.jpeg'
-import image6 from '../../images/propuesta3.jpeg'
 
 const Portfolios = [
   {
     Pimg: image1,
   },
   {
-    Pimg: image2,
-  },
-  {
     Pimg: image3,
   },
   {
     Pimg: image4,
-  },
-  {
-    Pimg: image5,
-  }
-  ,
-  {
-    Pimg: image6,
   }
 
 ]
@@ -59,11 +46,8 @@ const Gallery = (props) => {
         close={() => setOpen(false)}
         slides={[
           { src: image1 },
-          { src: image2 },
           { src: image3 },
-          { src: image4 },
-          { src: image5 },
-          { src: image6 }
+          { src: image4 }
         ]}
       />
     </div>

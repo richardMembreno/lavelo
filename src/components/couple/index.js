@@ -7,7 +7,7 @@ const Couple = () => {
     return(
         <div id="couple" className="about-wrap">
             <div className="couple-area section-padding pb-70">
-                <Sectiontitle section={'Im this world its just'}/>
+                <Sectiontitle section={"I'm this world it's just"}/>
                 <div className="container">
                     <div className="couple-wrap">
                         <div className="row">
