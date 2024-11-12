@@ -3,17 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './style.css'
 
-
 class Gift extends Component {
   state = {
     name: '',
     email: '',
     rsvp: '',
-    events: '',
-    notes: '',
     error: {}
 }
-
 
 changeHandler = (e) => {
     const error = this.state.error;
@@ -30,9 +26,7 @@ subimtHandler = (e) => {
 
     const { name,
         email,
-        rsvp,
-        events,
-        notes, error } = this.state;
+        rsvp, error } = this.state;
 
     if (name === '') {
         error.name = "Please enter your name";
@@ -43,26 +37,17 @@ subimtHandler = (e) => {
     if (rsvp === '') {
         error.rsvp = "Select your number of rsvp";
     }
-    if (events === '') {
-        error.events = "Select your event list";
-    }
-    if (notes === '') {
-        error.notes = "Please enter your note";
-    }
-
 
     if (error) {
         this.setState({
             error
         })
     }
-    if (error.name === '' && error.email === '' && error.email === '' && error.rsvp === '' && error.events === '' && error.notes === '') {
+    if (error.name === '' && error.email === '' && error.email === '' && error.rsvp === '') {
         this.setState({
             name: '',
             email: '',
             rsvp: '',
-            events: '',
-            notes: '',
             error: {}
         })
     }
@@ -73,10 +58,9 @@ subimtHandler = (e) => {
 
 render() {
 
-    const { name,
-        email,
-        notes, error } = this.state;
+    const { name,email,rsvp, error } = this.state;
       return (
+        <div id="rsvp" class="rsvp-area">
           <div className="gift-area">
               <div className="container">
               <div className="row mb-3">
@@ -100,8 +84,8 @@ render() {
                                                 <p>{error.email ? error.email : ''}</p>
                                             </div>
                                             <div className="col-12 col-sm-12">
-                                                <textarea className="contact-textarea" value={notes} onChange={this.changeHandler} placeholder="Mensaje" name="notes"></textarea>
-                                                <p>{error.notes ? error.notes : ''}</p>
+                                                <textarea className="contact-textarea" value={rsvp} onChange={this.changeHandler} placeholder="Mensaje" name="notes"></textarea>
+                                                <p>{error.rsvp ? error.rsvp : ''}</p>
                                             </div>
                                         </div>
                                         <div className="col-12 text-center">
@@ -114,6 +98,7 @@ render() {
                     </div>
               </div>
           </div>
+        </div>
       );
     }
   }

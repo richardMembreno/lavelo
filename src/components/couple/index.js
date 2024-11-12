@@ -9,23 +9,11 @@ const Couple = () => {
     return(
         <div id="couple" className="about-wrap">
             <div className="couple-area section-padding pb-70">
-                <Sectiontitle section={'La Propuesta'}/>
+                <Sectiontitle section={'Im this world its just'}/>
                 <div className="container">
                     <div className="couple-wrap">
                         <div className="row">
-                            <div className="col-lg-5 col-md-12 col-sm-12 couple-single">
-                                <div className="couple-wrap couple-wrap-2">
-                                    <div className="couple-img">
-                                        <img src={propuesta1} alt="thumb"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-2 couple-single">
-                                <div className="couple-shape">
-                                   <img src={couple3} alt="shape"/>
-                                </div>
-                            </div>
-                            <div className="col-lg-5 col-md-12 col-sm-12 couple-single">
+                            <div className="col-lg-5 couple-single m-auto">
                                 <div className="couple-wrap couple-wrap-3">
                                     <div className="couple-img couple-img-2">
                                         <img src={propuesta2} alt="thumb"/>

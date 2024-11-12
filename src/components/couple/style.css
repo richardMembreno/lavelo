@@ -13,10 +13,17 @@
 }
 
 .couple-img img {
-    transform: scale(1.1);
-    transition: all .3s;
-    width: 450px;
-    height: 385px;
+    transform: scale(1.02);
+    transition: all .2s;
+    width: 28pc;
+    height: 25pc;
+}
+
+@media(max-width:400px){
+    .couple-img img {
+        width: 25pc;
+        height: 20pc;
+    }
 }
 
 .couple-wrap2 {
