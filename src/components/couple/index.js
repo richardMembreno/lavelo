@@ -1,7 +1,5 @@
 import React from 'react'
 import Sectiontitle from '../section-title'
-import couple3 from '../../images/couple/2.png'
-import propuesta1 from '../../images/propuesta1.jpeg'
 import propuesta2 from '../../images/propuesta2.jpeg'
 import './style.css'
 
