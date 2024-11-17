@@ -1,0 +1,22 @@
+.invitation-area{
+    background: #fff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.invitation-wrap {
+    background: rgba(94, 154, 142, .5);
+    padding: 70px;
+}
+
+.invitation-wrap .section-invitation-title h2{
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.invitation-wrap .section-title{
+    margin-bottom: 30px;
+}

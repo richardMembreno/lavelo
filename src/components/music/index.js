@@ -1,17 +1,23 @@
-import React, {useEffect, useRef} from "react";
+import React, {useRef} from "react";
+import { Button } from "react-bootstrap";
 
 const BackgroundMusic = () => {
     const audioRef = useRef(null);
 
-    useEffect(() => {
-        audioRef.current.play();
-    }, []);
+    const handlePlayMusic = () => {
+        if(audioRef.current){
+            audioRef.current.play().catch(error => {
+                console.error('Error al reproducir la cancion', error);
+            });
+        } 
+    };
 
     return(
         <div>
-            <audio ref={audioRef} loop>
-                <source src="../../music/Maluma_ADMV.mp3" type="audio/mp3"/>
+            <audio ref={audioRef}>
+            <source src="../../music/Maluma_ADMV.mp3" type="audio/mp3" />
             </audio>
+            <Button onClick={handlePlayMusic}>Reproducir cancion</Button>
         </div>
     );
 };
