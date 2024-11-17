@@ -47,7 +47,12 @@ const Invitation = () => {
                                 </div>
                                 <div >
                                     <p>Hemos reservado un lugar especial para ti y otros acompañantes.</p>
-                                    {data.guestName}
+                                    <p>{data.guestName}</p>
+                                    {data.quantityCompanions > 0 && 
+                                        data.details.map(detail => (
+                                            <p>{detail.name}</p>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>
