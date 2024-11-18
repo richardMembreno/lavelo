@@ -5,12 +5,10 @@ import cancion from '../../music/Maluma_ADMV.mp3';
 
 const BackgroundMusic = () => {
     const audioRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(false);
 
     const handlePlayMusic = () => {
         if(audioRef.current){
             audioRef.current.play()
-            .then(() => { setIsPlaying(true); })
             .catch(error => { console.error('Error al reproducir la música:', error);});
         } 
     };
@@ -19,7 +17,6 @@ const BackgroundMusic = () => {
         if (audioRef.current)
         {
             audioRef.current.pause(); 
-            setIsPlaying(false); 
         }
     };
 

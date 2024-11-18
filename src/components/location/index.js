@@ -25,7 +25,7 @@ const Location = () => {
                                     <span>Hora de inicio 4:30 PM, agradecemos tu puntualidad.</span>
                                     <div className='mt-4'>
                                         <div className="next-post">
-                                            <a href='https://maps.app.goo.gl/GDLpRdZYr4edFNCt7' target='_blank'><span className="post-control-link">Ver Ubicación</span></a>
+                                            <a href='https://maps.app.goo.gl/GDLpRdZYr4edFNCt7' target='_blank' rel="noreferrer"><span className="post-control-link">Ver Ubicación</span></a>
                                         </div>
                                     </div>
                                     
