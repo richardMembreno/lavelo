@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'
 
-const Invitation = () => {
+const Invitation = ({ param }) => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     
     useEffect(() => {
-        const apiUrl = 'https://wedding-api-gnabf5bsbnd2dcd6.eastus-01.azurewebsites.net/Invitation/GetGuest?id=eb8b0695-a10a-4abf-9f55-37aa8938e170';
+        const apiUrl = `https://wedding-api-gnabf5bsbnd2dcd6.eastus-01.azurewebsites.net/Invitation/GetGuest?id=${param}`;
 
         const fetchData = async () => {
             try{
@@ -25,14 +25,14 @@ const Invitation = () => {
         };
 
         fetchData();
-    }, []);
+    }, [param]);
 
     if(loading){
         return <div>Loading...</div>;
     }
 
     if(error){
-        return <div>Error {error.message}</div>;
+        return <div>Error {param}</div>;
     }
 
     return(

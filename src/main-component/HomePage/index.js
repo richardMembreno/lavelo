@@ -1,4 +1,5 @@
 import React from  'react';
+import { useParams } from 'react-router-dom';
 
 // components
 import Couple from '../../components/couple';
@@ -12,6 +13,7 @@ import Invitation from '../../components/Invitation';
 
 
 const Homepage = () => {
+    const {param} = useParams();
     return(
        <div>
            <Navbar/>
@@ -21,7 +23,7 @@ const Homepage = () => {
            <Location/>
            <Gallery/>
            <MusicBackground />
-           <Invitation />
+           <Invitation param={param}/>
        </div>
     )
 }
