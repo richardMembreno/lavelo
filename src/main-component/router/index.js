@@ -13,6 +13,7 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Homepage />} />
           <Route path="/:param" element={<Homepage />} />
           <Route path='/home' element={<Homepage />} />
           <Route path='/home/:param' element={<Homepage />} />
