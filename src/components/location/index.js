@@ -1,6 +1,5 @@
 import React from 'react'
 import Sectiontitle from '../section-title'
-import LocationMap from '../LocationModal/LocationModal'
 import talapo from '../../images/talapo.png'
 import weddinggift from '../../images/gift/gift2.jpg'
 import './style.css'
