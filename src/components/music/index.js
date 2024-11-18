@@ -8,7 +8,9 @@ const BackgroundMusic = () => {
 
     const handlePlayMusic = () => {
         if(audioRef.current){
-            audioRef.current.play() .then(() => { setIsPlaying(true); console.log('Reproduciendo música'); }) .catch(error => { console.error('Error al reproducir la música:', error);});
+            audioRef.current.play()
+            .then(() => { setIsPlaying(true); console.log('Reproduciendo música'); })
+            .catch(error => { console.error('Error al reproducir la música:', error);});
         } 
     };
 
