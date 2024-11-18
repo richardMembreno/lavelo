@@ -27,10 +27,10 @@ const BackgroundMusic = () => {
                 <div className="buttons-music">
                     <audio ref={audioRef} src={cancion} />
                     <div className="next-post">
-                        <a href="#" onClick={handlePlayMusic}><span className="post-control-link">Reproducir</span></a>
+                        <a href="/#" onClick={handlePlayMusic}><span className="post-control-link">Reproducir</span></a>
                     </div>
                     <div className="next-post">
-                        <a href="#" onClick={handlePauseMusic}><span className="post-control-link">Pausar</span></a>
+                        <a href="/#" onClick={handlePauseMusic}><span className="post-control-link">Pausar</span></a>
                     </div>
                 </div>
             </div>
