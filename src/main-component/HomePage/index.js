@@ -20,9 +20,9 @@ const Homepage = () => {
            <SimpleSlider/>
            <Saveday/>
            <Couple/>
+           <MusicBackground />
            <Location/>
            <Gallery/>
-           <MusicBackground />
            <Invitation param={param}/>
        </div>
     )

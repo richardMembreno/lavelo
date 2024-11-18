@@ -43,6 +43,7 @@
     .react-countdown .time-section {
         margin-bottom: 30px;
     }
+
 }
 
 
@@ -59,12 +60,19 @@
         font-size: 62px;
         font-size: 3.44444rem;
     }
+    .section-area{
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
     .count-down-section h2 {
         font-size: 50px;
         font-size: 2.77778rem;
+    }
+
+    .section-area{
+        text-align: center;
     }
 }
 

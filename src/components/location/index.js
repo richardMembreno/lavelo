@@ -2,7 +2,7 @@ import React from 'react'
 import Sectiontitle from '../section-title'
 import LocationMap from '../LocationModal/LocationModal'
 import talapo from '../../images/talapo.png'
-import weddinggift from '../../images/weddinggift.jpg'
+import weddinggift from '../../images/gift/gift2.jpg'
 import './style.css'
 
 const Location = () => {
@@ -25,7 +25,9 @@ const Location = () => {
                                     <h3>Ceremonia Civil</h3>
                                     <span>Hora de inicio 4:30 PM, agradecemos tu puntualidad.</span>
                                     <div className='mt-4'>
-                                        <LocationMap buttonClass={'location-btn'} />
+                                        <div className="next-post">
+                                            <a href='https://maps.app.goo.gl/GDLpRdZYr4edFNCt7' target='_blank'><span className="post-control-link">Ver Ubicación</span></a>
+                                        </div>
                                     </div>
                                     
                                 </div>

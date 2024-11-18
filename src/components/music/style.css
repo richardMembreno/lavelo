@@ -1,0 +1,37 @@
+.next-post{
+    display: inline-block;
+    margin: 0 4px 0 4px;
+}
+
+.buttons-music{
+    width: 100%;
+    padding: 0 auto 0 auto;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.next-post:hover{
+    color: #fff;
+}
+
+.next-post a {
+    background-color: rgba(169, 173, 175, 0.2);
+    font-weight: 500;
+    color: #696868;
+    display: block;
+    border-radius: 60px;
+    padding: 12px 35px;
+}
+
+.next-post a:hover, .post-control-link:hover{
+    background-color:#649e93;
+    color: #fff;
+}
+
+.post-control-link:hover{
+    color: #fff;
+}
+
+
+ 

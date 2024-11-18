@@ -28,11 +28,11 @@ const Invitation = ({ param }) => {
     }, [param]);
 
     if(loading){
-        return <div>Loading...</div>;
+        return <div>Cargando Invitación...</div>;
     }
 
     if(error){
-        return <div>Error {param}</div>;
+        return <div></div>;
     }
 
     return(
@@ -46,13 +46,7 @@ const Invitation = ({ param }) => {
                                     <h2>Invitación</h2>
                                 </div>
                                 <div >
-                                    <p>Hemos reservado un lugar especial para ti y otros acompañantes.</p>
-                                    <p>{data.guestName}</p>
-                                    {data.quantityCompanions > 0 && 
-                                        data.details.map(detail => (
-                                            <p key={detail.id}>{detail.name}</p>
-                                        ))
-                                    }
+                                    <p>Hola {data.guestName}. Queremos compartir contigo este momento especial y te hemos reservado un lugar para {data.quantityCompanions} {data.quantityCompanions > 1 ? 'personas' : 'persona'}.</p>
                                 </div>
                             </div>
                         </div>
