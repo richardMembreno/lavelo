@@ -15,7 +15,7 @@
     color: #fff;
 }
 
-.next-post a {
+.next-post a, .next-post button {
     background-color: rgba(169, 173, 175, 0.2);
     font-weight: 500;
     color: #696868;
@@ -24,9 +24,18 @@
     padding: 12px 35px;
 }
 
-.next-post a:hover, .post-control-link:hover{
+.next-post a:hover, .next-post button:hover, .post-control-link:hover{
     background-color:#649e93;
     color: #fff;
+}
+
+.next-post button{
+    border: rgba(169, 173, 175, 0.2);
+}
+
+.next-post button:hover{
+    border-color: #649e93;
+    border: #649e93;
 }
 
 .post-control-link:hover{
