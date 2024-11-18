@@ -22,10 +22,12 @@ const Location = () => {
                             </div>
                             <div className="col-lg-7">
                                 <div className="ceromony-content">
-                                    <h3>Ceremonia</h3>
-                                    <span>28 Diciembre 2024, 9:00 PM - 11:00 PM</span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                                    <LocationMap buttonClass={'location-btn'} />
+                                    <h3>Ceremonia Civil</h3>
+                                    <span>Hora de inicio 4:30 PM, agradecemos tu puntualidad.</span>
+                                    <div className='mt-4'>
+                                        <LocationMap buttonClass={'location-btn'} />
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -36,8 +38,7 @@ const Location = () => {
                         <div className="col-lg-7">
                             <div className="ceromony-content ceromony-content2">
                                 <h3>Regalos</h3>
-                                <span>Sunday, 25 July 18, 9.00 AM-5.00 PM</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                                <span>Muestras de cariño por medio de sobre.</span>
                             </div>
                         </div>
                         <div className="col-lg-5">

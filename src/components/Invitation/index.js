@@ -50,7 +50,7 @@ const Invitation = () => {
                                     <p>{data.guestName}</p>
                                     {data.quantityCompanions > 0 && 
                                         data.details.map(detail => (
-                                            <p>{detail.name}</p>
+                                            <p key={detail.id}>{detail.name}</p>
                                         ))
                                     }
                                 </div>

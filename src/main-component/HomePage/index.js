@@ -7,6 +7,7 @@ import Location from '../../components/location';
 import Gallery from '../../components/gallery';
 import Navbar from '../../components/Navbar'
 import Saveday from '../../components/countdown'
+import MusicBackground from '../../components/music'
 import Invitation from '../../components/Invitation';
 
 
@@ -19,6 +20,7 @@ const Homepage = () => {
            <Couple/>
            <Location/>
            <Gallery/>
+           <MusicBackground />
            <Invitation />
        </div>
     )
