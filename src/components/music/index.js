@@ -1,10 +1,9 @@
 import React, {useRef, useState} from "react";
+import cancion from '../../music/Maluma_ADMV.mp3';
 
 const BackgroundMusic = () => {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
-
-    const audioUrl = "https://docs.google.com/uc?export=download&id=1LMMFSarV43L-s2fNVlNudirKSEhKiuM6";
 
     const handlePlayMusic = () => {
         if(audioRef.current){
@@ -23,11 +22,11 @@ const BackgroundMusic = () => {
         }
     };
 
-    console.log('URL del audio:', audioUrl);
+    console.log('URL del audio:', cancion);
 
     return(
         <div>
-            <audio ref={audioRef} src={audioUrl} />
+            <audio ref={audioRef} src={cancion} />
             <button onClick={handlePlayMusic} disabled={isPlaying}>Reproducir</button>
             <button onClick={handlePauseMusic} disabled={!isPlaying}>Pausar</button>
         </div>
