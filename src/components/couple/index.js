@@ -1,6 +1,6 @@
 import React from 'react'
 import Sectiontitle from '../section-title'
-import propuesta2 from '../../images/propuesta2.jpeg'
+import propuesta2 from '../../images/principal.jpeg'
 import './style.css'
 
 const Couple = () => {

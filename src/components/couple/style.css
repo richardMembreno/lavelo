@@ -15,14 +15,14 @@
 .couple-img img {
     transform: scale(1.02);
     transition: all .2s;
-    width: 28pc;
-    height: 25pc;
+    width: 33pc;
+    height: 27pc;
 }
 
 @media(max-width:400px){
     .couple-img img {
-        width: 25pc;
-        height: 20pc;
+        width: 27pc;
+        height: 21pc;
     }
 }
 

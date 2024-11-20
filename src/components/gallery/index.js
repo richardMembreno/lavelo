@@ -5,9 +5,10 @@ import "yet-another-react-lightbox/styles.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import './style.css'
 
-import image1 from '../../images/imagen1.jpeg'
-import image3 from '../../images/imagen3.jpeg'
-import image4 from '../../images/propuesta1.jpeg'
+import image1 from '../../images/editada3.jpeg'
+import image3 from '../../images/editada2.jpeg'
+import image4 from '../../images/editada1.jpeg'
+import image2 from '../../images/editada4.jpeg'
 
 const Portfolios = [
   {
@@ -18,6 +19,9 @@ const Portfolios = [
   },
   {
     Pimg: image4,
+  },
+  {
+    Pimg: image2,
   }
 
 ]
@@ -47,7 +51,8 @@ const Gallery = (props) => {
         slides={[
           { src: image1 },
           { src: image3 },
-          { src: image4 }
+          { src: image4 },
+          { src: image2},
         ]}
       />
     </div>
